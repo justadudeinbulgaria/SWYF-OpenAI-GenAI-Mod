@@ -1,0 +1,24 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# User-specific mod configs & keys (never commit real API keys!)
+ai_mod_config.json
+surplus_config.json
+*.bak
+*.tmp
+swyf_live_screenshot.png
+
+# OS files
+.DS_Store
+Thumbs.db

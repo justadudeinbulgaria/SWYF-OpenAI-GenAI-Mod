@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>SwyfModTool</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Mono.Cecil" Version="0.11.5" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SurplusBridge\SurplusBridge.csproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <EmbeddedResource Include="..\SurplusBridge\bin\$(Configuration)\net48\SurplusBridge.dll" Link="SurplusBridge.dll" LogicalName="SurplusBridge.dll" Condition="Exists('..\SurplusBridge\bin\$(Configuration)\net48\SurplusBridge.dll')" />
+  </ItemGroup>
+</Project>

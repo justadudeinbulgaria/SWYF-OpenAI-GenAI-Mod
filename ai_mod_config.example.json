@@ -1,0 +1,12 @@
+{
+  "provider": "gemini",
+  "api_key": "YOUR_API_KEY_HERE",
+  "fallback_api_key": "",
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+  "models_endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/models",
+  "stt_endpoint": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+  "stt_mode": "gemini_native",
+  "model": "gemini-2.5-flash",
+  "voice_model": "gemini-2.5-flash",
+  "enable_whisper_fallback": false
+}

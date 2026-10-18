@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1017"/>
+      <stop offset="50%" stop-color="#111a27"/>
+      <stop offset="100%" stop-color="#19131d"/>
+    </linearGradient>
+    <linearGradient id="accentGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="1200" height="380" rx="18" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Subtle Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.55">
+    <line x1="0" y1="76" x2="1200" y2="76"/>
+    <line x1="0" y1="152" x2="1200" y2="152"/>
+    <line x1="0" y1="228" x2="1200" y2="228"/>
+    <line x1="0" y1="304" x2="1200" y2="304"/>
+    <line x1="240" y1="0" x2="240" y2="380"/>
+    <line x1="480" y1="0" x2="480" y2="380"/>
+    <line x1="720" y1="0" x2="720" y2="380"/>
+    <line x1="960" y1="0" x2="960" y2="380"/>
+  </g>
+
+  <!-- Top Pill Badge -->
+  <rect x="48" y="34" width="380" height="30" rx="15" fill="#132337" stroke="#38bdf8" stroke-width="1.2"/>
+  <circle cx="66" cy="49" r="5" fill="#34d399" filter="url(#glow)"/>
+  <text x="80" y="54" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#bae6fd" letter-spacing="1.1">OPEN-SOURCE MONO.CECIL PATCHER &amp; AI BRIDGE</text>
+
+  <!-- Main Title -->
+  <text x="48" y="114" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="44" font-weight="900" fill="#f8fafc" letter-spacing="-0.5">SCAM WITH YOUR FRIENDS</text>
+  <text x="48" y="160" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="url(#accentCyan)">OpenAI &amp; Google Gemini GenAI Voice + Chat Mod</text>
+
+  <!-- Subtitle Description -->
+  <text x="48" y="198" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16" fill="#94a3b8">
+    Direct Standard API support for Caller Dialogue &amp; ultra-low-latency Cloud Speech-to-Text,
+  </text>
+  <text x="48" y="222" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16" fill="#94a3b8">
+    dual Chat/Voice Model IDs, ~400MB Whisper RAM Saver, and a real-time 4-stage HUD overlay.
+  </text>
+
+  <!-- Feature Pills Bottom Left -->
+  <g transform="translate(48, 252)">
+    <rect x="0" y="0" width="186" height="38" rx="8" fill="#172536" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="93" y="24" text-anchor="middle" font-family="Segoe UI, Inter, sans-serif" font-size="13.5" font-weight="700" fill="#e0f2fe">Google Gemini GenAI</text>
+
+    <rect x="198" y="0" width="166" height="38" rx="8" fill="#142924" stroke="#34d399" stroke-width="1.2"/>
+    <text x="281" y="24" text-anchor="middle" font-family="Segoe UI, Inter, sans-serif" font-size="13.5" font-weight="700" fill="#d1fae5">OpenAI Standard</text>
+
+    <rect x="376" y="0" width="182" height="38" rx="8" fill="#271e14" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="467" y="24" text-anchor="middle" font-family="Segoe UI, Inter, sans-serif" font-size="13.5" font-weight="700" fill="#fef3c7">OpenRouter / Custom</text>
+
+    <rect x="0" y="48" width="272" height="38" rx="8" fill="#1e1b2e" stroke="#a78bfa" stroke-width="1.2"/>
+    <text x="136" y="72" text-anchor="middle" font-family="Segoe UI, Inter, sans-serif" font-size="13.5" font-weight="700" fill="#ede9fe">~400MB Whisper RAM Saver</text>
+
+    <rect x="284" y="48" width="274" height="38" rx="8" fill="#172536" stroke="#60a5fa" stroke-width="1.2"/>
+    <text x="421" y="72" text-anchor="middle" font-family="Segoe UI, Inter, sans-serif" font-size="13.5" font-weight="700" fill="#dbeafe">Dual Chat &amp; Voice Model IDs</text>
+  </g>
+
+  <!-- Right Side In-Game UI Mockup Card -->
+  <g transform="translate(650, 34)">
+    <rect x="0" y="0" width="504" height="312" rx="12" fill="#0f1722" stroke="#38bdf8" stroke-width="1.5" opacity="0.96"/>
+    <rect x="0" y="0" width="504" height="38" rx="12" fill="#162436"/>
+    <circle cx="20" cy="19" r="5.5" fill="#ef4444"/>
+    <circle cx="38" cy="19" r="5.5" fill="#f59e0b"/>
+    <circle cx="56" cy="19" r="5.5" fill="#10b981"/>
+    <text x="78" y="24" font-family="Consolas, monospace" font-size="13" font-weight="700" fill="#93c5fd">IN-GAME AI MOD SETTINGS &amp; LIVE HUD</text>
+
+    <!-- Status Line -->
+    <text x="20" y="62" font-family="Consolas, monospace" font-size="11.5" font-weight="700" fill="#6ee7b7">
+      ✓ API Token Active | Whisper Fallback: OFF (~400MB Saved)
+    </text>
+
+    <!-- Row 1 -->
+    <rect x="18" y="76" width="468" height="44" rx="6" fill="#1c1816" stroke="#523f31" stroke-width="1"/>
+    <text x="30" y="103" font-family="Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#f3e8d2">API TOKEN (OPENAI / GEMINI)</text>
+    <rect x="236" y="84" width="238" height="28" rx="4" fill="#101a20" stroke="#64748b" stroke-width="1"/>
+    <text x="248" y="103" font-family="Consolas, monospace" font-size="12.5" font-weight="700" fill="#f8fafc">AIzaSyDemoKey_••••••••••••</text>
+
+    <!-- Row 2 -->
+    <rect x="18" y="128" width="468" height="44" rx="6" fill="#1c1816" stroke="#523f31" stroke-width="1"/>
+    <text x="30" y="155" font-family="Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#f3e8d2">WHISPER OFFLINE FALLBACK</text>
+    <rect x="236" y="136" width="238" height="28" rx="4" fill="#231a12" stroke="#d97706" stroke-width="1"/>
+    <text x="248" y="155" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#fef3c7">Disabled (Saves ~400MB RAM) ▼</text>
+
+    <!-- Row 3 -->
+    <rect x="18" y="180" width="468" height="44" rx="6" fill="#1c1816" stroke="#523f31" stroke-width="1"/>
+    <text x="30" y="207" font-family="Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#f3e8d2">CHAT AI MODEL ID (DIALOGUE)</text>
+    <rect x="236" y="188" width="238" height="28" rx="4" fill="#101a20" stroke="#64748b" stroke-width="1"/>
+    <text x="248" y="207" font-family="Consolas, monospace" font-size="12.5" font-weight="700" fill="#38bdf8">gemini-2.5-flash</text>
+
+    <!-- Row 4 -->
+    <rect x="18" y="232" width="468" height="44" rx="6" fill="#1c1816" stroke="#523f31" stroke-width="1"/>
+    <text x="30" y="259" font-family="Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#f3e8d2">VOICE AI MODEL ID (STT)</text>
+    <rect x="236" y="240" width="238" height="28" rx="4" fill="#101a20" stroke="#64748b" stroke-width="1"/>
+    <text x="248" y="259" font-family="Consolas, monospace" font-size="12.5" font-weight="700" fill="#34d399">gemini-2.5-flash</text>
+
+    <!-- Live HUD Footer -->
+    <rect x="18" y="282" width="468" height="22" rx="4" fill="#091f19"/>
+    <text x="252" y="297" text-anchor="middle" font-family="Consolas, monospace" font-size="11.5" font-weight="700" fill="#34d399">
+      PHONE HUD: YOUR MIC IS LIVE [STT: 0.38s | AI: 0.94s]
+    </text>
+  </g>
+</svg>
