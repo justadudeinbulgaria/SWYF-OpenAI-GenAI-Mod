@@ -1,6 +1,6 @@
-<div align="center">
+﻿<div align="center">
 
-<img src="assets/banner.png" alt="Scam With Your Friends — OpenAI & Google Gemini GenAI Mod Banner" width="100%" />
+<img src="assets/banner.png" alt="Scam With Your Friends â€” OpenAI & Google Gemini GenAI Mod Banner" width="100%" />
 
 <br/>
 
@@ -12,7 +12,7 @@
 
 An open-source `Mono.Cecil` patcher (`SwyfModTool.exe`) and runtime AI/Voice bridge (`SurplusBridge.dll`) for *Scam With Your Friends*. It enables direct integration with the Google Gemini (GenAI) Standard API, OpenAI Standard API, OpenRouter, or any OpenAI-compatible endpoint for caller dialogue and cloud Speech-to-Text (STT), with separate Chat and Voice model configuration and an in-game settings panel.
 
-[Releases](https://github.com/justadudeinbulgaria/SWYF-OpenAI-GenAI-Mod/releases) · [Installation](#installation) · [Screenshots](#in-game-screenshots) · [Configuration](#supported-providers--configuration) · [Issues](https://github.com/justadudeinbulgaria/SWYF-OpenAI-GenAI-Mod/issues)
+[Releases](https://github.com/justadudeinbulgaria/SWYF-OpenAI-GenAI-Mod/releases) Â· [Installation](#installation) Â· [Screenshots](#in-game-screenshots) Â· [Configuration](#supported-providers--configuration) Â· [Issues](https://github.com/justadudeinbulgaria/SWYF-OpenAI-GenAI-Mod/issues)
 
 </div>
 
@@ -94,7 +94,7 @@ flowchart LR
 
 1. Close **Scam With Your Friends** if it is running.
 2. Download the latest archive from [**Releases**](https://github.com/justadudeinbulgaria/SWYF-OpenAI-GenAI-Mod/releases) (or run `dist\SwyfModTool.exe` from this repository).
-3. `SwyfModTool.exe` scans drives `A:`–`Z:` to locate your `Scam With Your Friends` Steam directory.
+3. `SwyfModTool.exe` scans drives `A:`â€“`Z:` to locate your `Scam With Your Friends` Steam directory.
 4. Select **`[1] Install / Update Mod & Configure API`**, choose a provider (**Google Gemini GenAI**, **OpenAI**, **OpenRouter**, or **Custom**), enter your API key, and press **ENTER**.
 5. The patcher will:
    - Back up the original game DLLs (`*.bak`),
@@ -210,26 +210,26 @@ dotnet build src/SwyfModTool/SwyfModTool.csproj -c Release
 
 ```text
 SWYF-OpenAI-GenAI-Mod/
-├── assets/
-│   ├── banner.png                          # Repository banner
-│   ├── architecture.png                    # Runtime pipeline diagram
-│   └── screenshots/                        # In-game UI & settings screenshots
-├── dist/
-│   ├── SwyfModTool.exe                     # Prebuilt installer, patcher & API tester
-│   ├── SurplusBridge.dll                   # Prebuilt runtime AI/Voice/UI bridge
-│   ├── Mono.Cecil*.dll                     # IL weaver dependencies
-│   └── ai_mod_config.example.json          # Example configuration file
-├── src/
-│   ├── SurplusBridge/
-│   │   ├── SurplusBridge.cs                # Runtime STT, Chat AI, UI injection & HUD bridge
-│   │   └── SurplusBridge.csproj
-│   └── SwyfModTool/
-│       ├── Program.cs                      # Mono.Cecil patcher, IL verifier & API tester
-│       └── SwyfModTool.csproj
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── LICENSE
-└── README.md
+â”œâ”€â”€ assets/
+â”‚   â”œâ”€â”€ banner.png                          # Repository banner
+â”‚   â”œâ”€â”€ architecture.png                    # Runtime pipeline diagram
+â”‚   â””â”€â”€ screenshots/                        # In-game UI & settings screenshots
+â”œâ”€â”€ dist/
+â”‚   â”œâ”€â”€ SwyfModTool.exe                     # Prebuilt installer, patcher & API tester
+â”‚   â”œâ”€â”€ SurplusBridge.dll                   # Prebuilt runtime AI/Voice/UI bridge
+â”‚   â”œâ”€â”€ Mono.Cecil*.dll                     # IL weaver dependencies
+â”‚   â””â”€â”€ ai_mod_config.example.json          # Example configuration file
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ SurplusBridge/
+â”‚   â”‚   â”œâ”€â”€ SurplusBridge.cs                # Runtime STT, Chat AI, UI injection & HUD bridge
+â”‚   â”‚   â””â”€â”€ SurplusBridge.csproj
+â”‚   â””â”€â”€ SwyfModTool/
+â”‚       â”œâ”€â”€ Program.cs                      # Mono.Cecil patcher, IL verifier & API tester
+â”‚       â””â”€â”€ SwyfModTool.csproj
+â”œâ”€â”€ CHANGELOG.md
+â”œâ”€â”€ CONTRIBUTING.md
+â”œâ”€â”€ LICENSE
+â””â”€â”€ README.md
 ```
 
 ---
