@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Scam With Your Friends — OpenAI & Google Gemini GenAI Mod Banner" width="100%" />
+<img src="assets/banner.png" alt="Scam With Your Friends — OpenAI & Google Gemini GenAI Mod Banner" width="100%" />
 
 <br/>
 
@@ -76,7 +76,7 @@ Confirm at a glance on the Main Menu that the mod and voice pipeline are active 
 ## 🏗️ Architecture & Voice/AI Pipeline
 
 <div align="center">
-  <img src="assets/architecture.svg" alt="SurplusBridge Runtime Architecture" width="98%" />
+  <img src="assets/architecture.png" alt="SurplusBridge Runtime Architecture" width="98%" />
 </div>
 
 ```mermaid
