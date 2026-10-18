@@ -938,6 +938,17 @@ class Program
                 }
             }
 
+            var authStatusSource = mod.Types.FirstOrDefault(t => t.Name == "BackendAuthenticationStatusSource");
+            if (authStatusSource != null)
+            {
+                var canStart = authStatusSource.Methods.FirstOrDefault(m => m.Name == "get_CanStartGame");
+                if (canStart != null) ReplaceWithReturnBool(canStart, true);
+                var reqSignIn = authStatusSource.Methods.FirstOrDefault(m => m.Name == "RequireGameSignIn");
+                if (reqSignIn != null) ReplaceWithReturnBool(reqSignIn, true);
+                var piracyWarn = authStatusSource.Methods.FirstOrDefault(m => m.Name == "get_PiracyWarningActive");
+                if (piracyWarn != null) ReplaceWithReturnBool(piracyWarn, false);
+            }
+
             var mmStatus = mod.Types.FirstOrDefault(t => t.Name == "MainMenuConnectionStatus");
             if (mmStatus != null)
             {
@@ -1309,6 +1320,14 @@ class Program
             var kapi = mod.Types.First(t => t.Name == "KolkataApi");
             ReplaceWithReturnBool(kapi.Methods.First(m => m.Name == "get_BackendAuthenticated"), true);
             ReplaceWithReturnInt(kapi.Methods.First(m => m.Name == "get_BackendAuthStatus"), 2);
+            var canStartGameMeth = kapi.Methods.FirstOrDefault(m => m.Name == "get_CanStartGame");
+            if (canStartGameMeth != null) ReplaceWithReturnBool(canStartGameMeth, true);
+            var browserAvailMeth = kapi.Methods.FirstOrDefault(m => m.Name == "get_BrowserSignInAvailable");
+            if (browserAvailMeth != null) ReplaceWithReturnBool(browserAvailMeth, false);
+            var browserPendMeth = kapi.Methods.FirstOrDefault(m => m.Name == "get_BrowserSignInPending");
+            if (browserPendMeth != null) ReplaceWithReturnBool(browserPendMeth, false);
+            var showSupportMeth = kapi.Methods.FirstOrDefault(m => m.Name == "get_ShowSignInSupport");
+            if (showSupportMeth != null) ReplaceWithReturnBool(showSupportMeth, false);
             ReplaceWithReturnBool(kapi.Methods.First(m => m.Name == "get_AiBanned"), false);
             ReplaceWithReturnBool(kapi.Methods.First(m => m.Name == "get_AiUsageRestricted"), false);
             ReplaceWithReturnBool(kapi.Methods.First(m => m.Name == "get_AiCreditsDepleted"), false);
